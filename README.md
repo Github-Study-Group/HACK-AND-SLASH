@@ -1,0 +1,1 @@
+Git Hubの管理方法勉強用のRepositories
