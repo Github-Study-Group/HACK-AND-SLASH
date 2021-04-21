@@ -4,5 +4,20 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/01.Scenes/Title/Title Scenes.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/01.Scenes/UI/BaseCamp UI Scenes.unity
+    guid: a9e31d8bd2c0511439ac0e4414599d3c
+  - enabled: 1
+    path: Assets/01.Scenes/BaseCamp/BaseCamp Game Scenes.unity
+    guid: 1287e1b5e9ecea34ca4bb6efc0c3bcfb
+  - enabled: 1
+    path: Assets/01.Scenes/UI/Dungeon UI Scenes.unity
+    guid: 01df32cd3e507564dbc80d83381a5eb7
+  - enabled: 1
+    path: Assets/01.Scenes/Dungeon Stage/Scenes Stage 01.unity
+    guid: c5c162147b2357b478cb8db673fb150f
   m_configObjects: {}
