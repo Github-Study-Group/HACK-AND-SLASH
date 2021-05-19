@@ -8,16 +8,9 @@ public class GameManager : MonoBehaviour
     //シングルトーン
     private static GameManager instance = null;
 
-    [SerializeField] private string senceNameTitleUI;
-    [SerializeField] private string senceNameBaseCampGame;
-    [SerializeField] private string senceNamePlayGame;
-
-    private enum SenceChange
-    {
-        Title,
-        BaseCamp,
-        Play,
-    }
+    private string senceNameTitleUI;
+    private string senceNameBaseCampGame;
+    private string senceNamePlayGame;
 
     private void Awake()
     {
@@ -46,28 +39,31 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         // Title
-        senceNameTitleUI = "Title Scenes";
+        senceNameTitleUI = "01.Scenes/TitleScenes";
         
         // BaseCamp
-        senceNameBaseCampGame = "BaseCamp Scenes";
+        senceNameBaseCampGame = "01.Scenes/BaseCampScenes";
 
         // Play - Stge List
-        senceNamePlayGame = "Dungeon Stage01";
+        senceNamePlayGame = "01.Scenes/DungeonStage01";
          
     }
 
     public void ChangeSceneToBaseCamp()
     {
+        Debug.Log("Send Scene : " + senceNameBaseCampGame);
         SceneManager.LoadScene(senceNameBaseCampGame);
     }
 
     public void ChangeSceneToDungeon(int stage)
     {
+        Debug.Log("Send Scene : " + senceNamePlayGame);
         SceneManager.LoadScene(senceNamePlayGame);
     }
 
     public void ChangeSceneToTitle()
     {
+        Debug.Log("Send Scene : " + senceNameTitleUI);
         SceneManager.LoadScene(senceNameTitleUI);
     }
 }
