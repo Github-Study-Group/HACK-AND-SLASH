@@ -46,13 +46,13 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         // Title
-        senceNameTitleUI = "Title Scenes";
+        senceNameTitleUI = "01.Scenes/TitleScenes";
         
         // BaseCamp
-        senceNameBaseCampGame = "BaseCamp Scenes";
+        senceNameBaseCampGame = "01.Scenes/BaseCampScenes";
 
         // Play - Stge List
-        senceNamePlayGame = "Dungeon Stage01";
+        senceNamePlayGame = "01.Scenes/DungeonStage01";
          
     }
 
